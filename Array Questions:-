@@ -1,0 +1,64 @@
+/*
+Find the Largest and Smallest number in array
+ array:-1,2,6,3,5
+      -infinity=Inteher.MIN_VALUE;
+      +infinity=Integer.MAX_VALUE; 
+*/
+import java.util.Scanner;
+
+public class basics {
+  public static void largest_smallset(int arr[]){
+    int largest=Integer.MIN_VALUE;
+    int smallest=Integer.MAX_VALUE;
+    for(int i=0;i<arr.length;i++){
+      if(largest<arr[i]){
+         largest=arr[i];
+      }
+      if(smallest>arr[i]){
+         smallest=arr[i];
+      }
+    }
+    System.out.println("Largest element is:"+largest);
+    System.out.println("Smallest element is:"+smallest);
+
+  }
+   public static void main(String[] args) {
+      int marks[]={1,2,6,3,5};
+      largest_smallset(marks);
+    
+   }
+}
+
+/*
+Q:-Reverse an array 
+
+ array:-2,4,6,8,10 output:-10,8,6,4,2
+ 
+*/
+import java.util.Scanner;
+
+public class basics {
+  public static void reverse_array(int arr[]){
+    int first=0;
+    int last=arr.length-1;
+    while(first<last){
+      int temp=arr[last];
+      arr[last]=arr[first];
+      arr[first]=temp;
+      first++;
+      last--;
+    }
+
+  }
+   public static void main(String[] args) {
+      int marks[]={1,2,6,3,5};
+      reverse_array(marks);
+      for(int i=0;i<marks.length;i++){
+         System.out.print(marks[i]+" ");
+      }
+   }
+}
+
+/*
+Q:-
+*/
