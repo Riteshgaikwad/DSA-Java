@@ -1,0 +1,39 @@
+/*
+Multi dimensional array:-
+ 
+ 1 2 3   1 2 3 
+         5 6 7  
+         
+ Representation:-
+      0    1    2
+  0  0,0  0,1  0,2           rows=4
+  1  1,0  1,1  1,2           columns=3
+  2  2,0  2,1  2,2           cells=rows*columns
+  3  3,0  3,1  3,2                =4*3=12
+                  n * m   n=rows  m=columns
+        
+*/
+//Taking input and output:-
+
+import java.util.Scanner;
+public class basics {
+  public static void main(String args[]){
+    int matrix[][]=new int[3][3];
+    Scanner sc=new Scanner(System.in);
+    int n=matrix.length;
+    int m=matrix.length;
+    for(int i=0;i<n;i++){           //Input
+      for(int j=0;j<m;j++){
+        matrix[i][j]=sc.nextInt();
+      }
+    }
+    for(int i=0;i<n;i++){           //Output
+      for(int j=0;j<m;j++){
+        System.out.print((matrix[i][j]+" "));
+      }
+    }
+    sc.close();
+  }
+}
+
+//Searching element in Array
