@@ -30,3 +30,6 @@ public class basic {
         return true;
     }
 }
+/*
+Q:-Give a route containing 4 directions (E,W,N,S),find the shortest path to reach distination
+*/
