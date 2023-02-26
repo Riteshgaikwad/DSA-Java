@@ -1,4 +1,67 @@
 /*
+Quesstion:-
+      print factorial of a number
+*/
+//Solution:-
+
+public class basic {
+    
+    public static int factorial(int n){
+        if(n==1){
+            return 1;
+        }
+        int fnm1=factorial(n-1);
+        int fn=n*fnm1;
+        return fn;
+    } 
+    public static void main(String args[]){
+       System.out.println(factorial(5));
+    }
+}
+
+/*
+Question:-
+            print sum of first n natural numbers
+*/
+//Solution:-
+
+public class basic {
+   
+    public static int nat_sum(int n){
+        if(n==1){
+            return 1;
+        }
+        int sum_n=nat_sum(n-1);
+        int sum=n+sum_n;
+        return sum;
+    }
+    public static void main(String args[]){
+       System.out.println(nat_sum(5));
+    }
+}
+
+/*
+Question:-
+           print nth fibonacci numbers
+*/
+//Solution:-
+
+public class basic {
+    public static int print_fibonacci(int n){
+        if(n==0 || n==1){
+            return n;
+        }
+        int fnm1=print_fibonacci(n-1);
+        int fnm2=print_fibonacci(n-2);
+        int fib=fnm1+fnm2;
+        return fib;
+    }
+    public static void main(String args[]){
+       System.out.print(print_fibonacci(10));
+    }
+}
+
+/*
 Questions:-
       Check if a given array is sorted or not
 */
