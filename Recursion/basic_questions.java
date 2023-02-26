@@ -54,8 +54,6 @@ Question:-
 */
 import java.util.*;
 
-import javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
-
 public class basic {
     public static int last_occurance(int array[],int target,int i){
         if(i==array.length){
@@ -73,3 +71,5 @@ public class basic {
         System.out.println(last_occurance(num, 12, 0));
     }
 }
+
+
