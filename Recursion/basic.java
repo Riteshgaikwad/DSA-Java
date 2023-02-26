@@ -32,3 +32,24 @@ public class basic {
 
     }
 }
+
+/*
+Question:-
+            print the number from n to 1 (increasing order)
+*/
+//Solution:-
+import java.util.*;
+public class basic {
+    
+    public static void incresasing_order(int n){
+        if(n==1){
+            System.out.print(n+" ");
+            return;
+        }
+        incresasing_order(n-1);
+        System.out.print(n+" ");
+    }
+    public static void main(String args[]){
+       incresasing_order(5);
+    }
+}
